@@ -3,18 +3,18 @@ var triangle = function(sideOne, sideTwo, sideThree) {
 	if (sideOne + sideTwo <= sideThree ||
 		sideTwo + sideThree <= sideOne ||
 		sideThree + sideOne <= sideTwo) {
-		return "not a valid triangle";
+		return "Not a Valid Triangle";
 	}
 	else if (sideOne === sideTwo  && sideTwo === sideThree) {
-		return "equilateral";
+		return "an Equilateral Triangle";
 	}
 	else if (sideOne === sideTwo && sideOne !== sideThree ||
 		sideTwo === sideThree && sideTwo !== sideOne ||
 		sideThree === sideOne && sideThree !== sideOne) {
-		return "isosceles";
+		return "an Isosceles Triangle";
 	}
-	else if (sideOne !== sideTwo && sideOne !== sideThree) {
-		return "scalene"
+	else {
+		return "a Scalene Triangle"
 	}
 };
 
