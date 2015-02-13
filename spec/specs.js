@@ -1,0 +1,3 @@
+describe('triangle', function() {
+
+});
