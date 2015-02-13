@@ -1,19 +1,19 @@
 var triangle = function(sideOne, sideTwo, sideThree) {
 	
-	if (sideOne + sideTwo <= sideThree ||
-		sideTwo + sideThree <= sideOne ||
-		sideThree + sideOne <= sideTwo) {
+	if (sideOne + sideTwo <= sideThree || sideTwo + sideThree <= sideOne || sideThree + sideOne <= sideTwo) {
+
 		return "Not a Valid Triangle";
 	}
 	else if (sideOne === sideTwo  && sideTwo === sideThree) {
+
 		return "an Equilateral Triangle";
 	}
-	else if (sideOne === sideTwo && sideOne !== sideThree ||
-		sideTwo === sideThree && sideTwo !== sideOne ||
-		sideThree === sideOne && sideThree !== sideOne) {
+	else if (sideOne === sideTwo && sideOne !== sideThree || sideTwo === sideThree && sideTwo !== sideOne || sideThree === sideOne && sideThree !== sideOne) {
+
 		return "an Isosceles Triangle";
 	}
 	else {
+    
 		return "a Scalene Triangle"
 	}
 };
@@ -33,3 +33,4 @@ $(document).ready(function() {
 	 event.preventDefault();
 	});
 });
+
